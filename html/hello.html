@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <!--initial-scale="1",minimum-scale="1", maximum-scale="2"
+   user-scalable="no">이 값은 설정 안해도 자동으로 된다 그래도 이해할 것-->
+<title>HTML5</title>
+
+<link rel="stylesheet" href="default.css">
+<!--익스터널 스타일 파일 링크/ rel은 링크하려는 문서를 선언/ 하이퍼텍스트레퍼런스(href) -->
+    
+</head>
+<body>
+  <div class="container"></div>
+      <a href="#main">메뉴건너뛰기</a>
+      <!-- 이 링크는 장애인을 위한 것 css에서 안보이게 하고 대신 키보드 초점이 링크에 갈때만 보이게 할 것-->
+      <header class="header">
+            <h1>HTML5</h1>
+            <nav class="gnb">
+            	  <h2>메인 메뉴</h2>
+            	  <ul>
+            	     <li><a href="#">메뉴1</a>
+            	         <ul>
+            	         	 <li><a href="#">메뉴1-1</a></li>
+            	         	 <li><a href="#">메뉴1-2</a></li>
+            	         	 <li><a href="#">메뉴1-3</a></li>	
+            	         </ul>
+            	     </li>
+
+            	     <li><a href="#">메뉴2</a>
+            	       <ul>
+            	         	 <li><a href="#">메뉴2-1</a></li>
+            	         	 <li><a href="#">메뉴2-2</a></li>
+            	         	 <li><a href="#">메뉴2-3</a></li>	
+            	         </ul></li>
+
+            	     <li><a href="#">메뉴3</a>
+            	       <ul>
+            	         	 <li><a href="#">메뉴3-1</a></li>
+            	         	 <li><a href="#">메뉴3-2</a></li>
+            	         	 <li><a href="#">메뉴3-3</a></li>	
+            	         </ul></li>
+            	  </ul>
+            </nav>
+            <form class="search">
+                 <input type="search" required>
+                 <input type="submit" value="검색">
+            </form>
+      </header>
+      <div class="body">
+      	<main id="main"> .main</main>
+      	<nav class="lab">
+            <h2>메뉴 1</h2>
+            <ul>
+             	 <li><a href="#">메뉴1</a></li>
+               <li><a href="#">메뉴2</a></li>
+            	 <li><a href="#">메뉴3</a></li>	
+            </ul>
+
+      	</nav>
+      	<aside class="aside">           
+      	   <h2>바로가기</h2>
+             <ul>
+               <li><a href="#">참고링크1</a></li>
+               <li><a href="#">참고링크1</a></li>
+               <li><a href="#">참고링크1</a></li>
+              </ul>
+</aside>	
+      </div>
+      	
+      <footer class="footer"><p>Copyright &copy; FE.CAMP. All rights reserved.</p>
+      </footer>
+
+   </body>	
+</html>

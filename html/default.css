@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.container{
+	max-width:960px; 
+	background: silver;
+	margin: 0 0 0 auto;
+	list-style:;
+}
+.header>h1{}
+/* > 표시는 자식 선택자를 의미한다. 이건 자식이야 이런 의미  */
