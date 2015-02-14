@@ -12,22 +12,42 @@
 
 
 /*all*/
+/* 해상도 상관없는 공통 디자인요소를 찾는다 background는 background-image와 같다*/
+body{background-image: -webkit-linear-gradient(#ccc,#fff); }
+body{background-image: -moz-gradient(#ccc,#fff); }
+body{background-image: -ms-linear-gradient(#ccc,#fff); }
+body{background-image: -o-linear-gradient(#ccc,#fff); }
+body{background-image: linear-gradient(#ccc,#fff); }
+
+
+/*이 다섯개는 각각의 브라우저에 맞게 구문을 복사해서 한 거임/ 이것들은 표준 속성은 아니지만 이전부터 
+옛날 업데이트 버젼이 아니면 위중 하나를 골라 인식하게 된다. 브라우저 호환성이 높아짐! webkit(크롬, 사파리)
+항상 나중에 선언한 코드를 오버라이드 하면서 우선순위가 높아진다.*/
 
 /*Mobile*/
 
+
+/*왜 모바일에 미디어 커리를 사용않나요? 근데 문제는 옛날 스마트 폰은 아직도 쓰고 있어 그럼 css3가 지원이 안돼! 
+ 그래서 삽질 같지만 호환성을 높이기 위해 해야 돼! 모바일 스타일 시트를 먼저 작성하고 그 다음에 태블릿 데스크탑으로 오버라이드 하는 것
+ 모바일 퍼스트 css 스타일 기법이라 한다. 한국 사람들은 대부분 이 경우에 속하지 않지만 국제적으로 했을때  */
+
+
 /*Tablet&Desktop */
 
-@media only all and (min-width:768px){body{background : red;}
+@media only all and (min-width:768px){body{background : ;}}
 
 
 /*Tablet*/
 
-@media only all and (min-width:768px) and (max-width: 1024px){body{background : green;}
+@media only all and (min-width:768px) and (max-width: 1024px){body{background : ;}}
 
-/* and는 두 조건이 모두 참일 때만 작용된다. */
+/* and는 두 조건이 모두 참일 때만 작용된다. css 코드는 다른 값을 썼을  떄 나중에 선언된 코드가 덮어쓰기 한다. 그니까 레드가 아닌 그린! 
+즉 768px 일때는 같은 조건에서 마지막에 코딩 된 것이 우선순위가 높다! 이 말은 만약 1024px을 넘어서면 위의 빨간색이 나타남
+위의 미디어 쿼리는 충족 조건이 하나* 근데 만약 아래로 태그가 충족된다. 1024이 넘으면 근데 지금 모든 코드가 적용 꼬인다.
+그래서 1024가 아니라 1025로 적용해야 한다. 머리를 잘 굴려라! 
 
 
 /**/
 /*desktop*/
-
+@media only all and (min-width:1025px){body{background : ;}}
 /* ''>' 표시는 자식 선택자를 의미한다. 이건 자식이야 이런 의미  */
