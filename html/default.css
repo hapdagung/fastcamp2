@@ -15,9 +15,9 @@
 /* 해상도 상관없는 공통 디자인요소를 찾는다 background는 background-image와 같다*/
 body{background-image: -webkit-linear-gradient(#ccc,#fff); }
 body{background-image: -moz-gradient(#ccc,#fff); }
-body{background-image: -ms-linear-gradient(#ccc,#fff); }
+body{background-image: -ms-linear-gradient(#000,#fff); }
 body{background-image: -o-linear-gradient(#ccc,#fff); }
-body{background-image: linear-gradient(#ccc,#fff); }
+body{background-image: linear-gradient(#000,#fff); }
 
 
 /*이 다섯개는 각각의 브라우저에 맞게 구문을 복사해서 한 거임/ 이것들은 표준 속성은 아니지만 이전부터 
