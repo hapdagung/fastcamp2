@@ -15,17 +15,18 @@
 
 /*Mobile*/
 
-/*Tablet*/
-
 /*Tablet&Desktop */
 
-@media (min-width:768px){body{background : green;}
-/*미디어 쿼리에는 @media only all and 생략가능 only:미디어 쿼리를 적용해주는 브라우저 경우에만,
-all: 모든 미디어, 스크린장치, 프린트 모든 미디어 장치에 적용하세요 생략하면 그냥 all,  
-( all 대신 screen, print, print경우 인쇄될 떄만 
-이게 적용된다. 오케이? and는 print와 뒤의 768px 모두가 다 충족할떄만 해주세요. 
-즉 all and는 한짝임 and는 앞에 없으면 의미없음);* 익스플로러8는 미디어 쿼리 인지를 못함! 
-근데 이게 또 천재가 있어 /
+@media only all and (min-width:768px){body{background : green;}
+
+
+/*Tablet*/
+
+@media only all and (min-width:768px) and (max-width: 1024px){body{background : green;}
+
+/* and는 두 조건이 모두 참일 때만 작용된다. */
+
+
 /**/
 /*desktop*/
 
