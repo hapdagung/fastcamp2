@@ -6,11 +6,14 @@
    <!--initial-scale="1",minimum-scale="1", maximum-scale="2"
    user-scalable="no">이 값은 설정 안해도 자동으로 된다 그래도 이해할 것-->
 <title>HTML5</title>
+<link rel="stylesheet" href="default3.css">
+<!--익스터널 스타일 파일 링크/ rel은 링크하려는 문서를 선언/ 하이퍼텍스트레퍼런스(href)-->
 
-<link rel="stylesheet" href="default1.css">
-<!--익스터널 스타일 파일 링크/ rel은 링크하려는 문서를 선언/ 하이퍼텍스트레퍼런스(href) -->
+<!--[if lt IE 9]
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  -->
+  <!--[endif]-->
 </head>
 <body>
   <div class="container"></div>
@@ -20,8 +23,9 @@
             <h1>HTML5</h1>
             <nav class="gnb">
             	  <h2>메인 메뉴</h2>
-
-                <button type="button">메뉴열기</button>
+                <button type="button">
+                ::before 
+                "메뉴열기"</button>
             	  <ul>
             	     <li><a href="#">메뉴1</a>
             	         <ul>
@@ -52,7 +56,7 @@
             </form>
       </header>
       <div class="body">
-      	<main id="main"> .main</main>
+      	<main id="main"> main</main>
       	<nav class="lnb">
             <h2>메뉴 1</h2>
             <ul>
