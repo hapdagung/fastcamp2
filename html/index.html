@@ -7,19 +7,21 @@
    user-scalable="no">이 값은 설정 안해도 자동으로 된다 그래도 이해할 것-->
 <title>HTML5</title>
 
-<link rel="stylesheet" href="default.css">
+<link rel="stylesheet" href="default1.css">
 <!--익스터널 스타일 파일 링크/ rel은 링크하려는 문서를 선언/ 하이퍼텍스트레퍼런스(href) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
 <body>
   <div class="container"></div>
-      <a href="#main">메뉴건너뛰기</a>
+      <a href="#main" class="skip">메뉴건너뛰기</a>
       <!-- 이 링크는 장애인을 위한 것 css에서 안보이게 하고 대신 키보드 초점이 링크에 갈때만 보이게 할 것-->
       <header class="header">
             <h1>HTML5</h1>
             <nav class="gnb">
             	  <h2>메인 메뉴</h2>
+
+                <button type="button">메뉴열기</button>
             	  <ul>
             	     <li><a href="#">메뉴1</a>
             	         <ul>
@@ -51,7 +53,7 @@
       </header>
       <div class="body">
       	<main id="main"> .main</main>
-      	<nav class="lab">
+      	<nav class="lnb">
             <h2>메뉴 1</h2>
             <ul>
              	 <li><a href="#">메뉴1</a></li>
@@ -72,6 +74,12 @@
       	
       <footer class="footer"><p>Copyright &copy; FE.CAMP. All rights reserved.</p>
       </footer>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="default.js"></script>
 
+<!--스크립트 요소는 헤드와 바디 요소 사이에만 넣을 수 있다.
+많은 부분 자바스크립트는 이부분에 넣는 걸 권장한다. 단 위에 해드안에 있는 스크립트처럼 헤드에 반드시 넣어야 할 스크립트가 있다.
+브라우저 로딩은 위에서 아래부터 이루어진다. -->
    </body>	
 </html>
